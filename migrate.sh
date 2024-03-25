@@ -16,7 +16,7 @@ spec:
   template:
     spec:
       # Added a service account for OpenShift
-      serviceAccountName: migrate-pv
+      serviceAccountName: $SERVICE_ACCOUNT
       containers:
       - name: migrate
         image: debian
